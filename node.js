@@ -1,3 +1,4 @@
 const fs = require("fs");
 data = fs.readFileSync("ajay.txt");
-console.log(data);
+const org = data.toString();
+console.log(org);
