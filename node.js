@@ -31,7 +31,7 @@
 // // }
 // // add();
 
-// //array
+//array
 // let arr =[3,2,4,6,4,1];
 // for(let i = 0; i<arr.length;i++)
 // {
@@ -45,6 +45,22 @@
 //     }
 //   }
 // }
-// console.log(...arr)
+// let arr2 = [...arr]
+// console.log(arr2)
 
+// arr.push(4)
+// console.log(arr)
+function info(){
+    console.log(`my name is ${this.name}`)
+}
 
+const per1 = {
+    name : "ajay",
+    about:info
+}
+const per2 = {
+    name : "singh",
+    about:info
+}
+
+per2.about();
